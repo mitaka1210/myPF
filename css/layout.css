@@ -5,121 +5,94 @@
 /*234 - ПИКСЕЛИТЕ КОЙТО ИСКАМЕ ДА ПОСТИГНЕМ*/
 
 /*FONT-SIZE СМЕ ГО ЗАДАЛИ 16px РАЗДЕЛЯМЕ 234/16 И НАМИРАМЕ КОЛКО (em) СА НИ НУЖНИ СПРЯМО ИСКАНИТЕ ПИКСЕЛИ*/
-body {
+html {
+    background: var(--layout-bgr-main, white);
+
+  
 
 }
-
-
 .site {
-    max-width: var(--layouts-width, 60em);
+    max-width: var(--layouts-width, 50em);
     margin: 0 auto;
+    display: flex;
 }
 
 .site-header{
    display: flex;
    justify-content: space-between;
    align-items: center;
-}
-.site-main img  {
-    width: 100%;
-    height: auto;
-   
+   opacity: .8;
 }
 
-
-.site-main .bgr{
-    width: 66.25em;
-    position: relative;
-    left: -6em;
-}
-
-.site-main .bgr {
-    background-attachment: fixed;
-}
-
-.site-main .btn1,
-.btn2,
-.btn3 {
-    
-    margin-right: 10em;
-    padding: 0.5em;
-    position: relative;
-    top: -21em;
-    left: 15em;
-    border: 1px solid;
-    border-radius: 1em;
-    cursor: pointer;
-    opacity: .5;
-}
-
-.site-main .btn1  p{
-    padding: 2.5em;
-}
-.site-main .btn2  p{
-    padding: 2.5em;
-}
-.site-main .btn3  p{
-    padding: 2.5em;
-}
-
-
-.site-footer h1 {
-    text-align: center;
-    background-color: #ecf0f1;
-}
-
-.site-footer .images{
+.site-branding {
     display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: flex-start;
+    font-size: 1em;
 }
 
-.site-footer .work1 {
-   
-    height: 21em;
-    text-align: center;
-    margin: 1em;
-    background-image: url('/images/photo-1565090568947-7293970ba471.jpg');
-    background-repeat: no-repeat;
-    padding-top: 8em;
-   
-     color: #18dcff; 
-    cursor: pointer;
-    font-size: 1.2em;
- 
-    flex: 0 0 25%;
-}
-.site-footer .work2 {
+.first-img {
+    position: relative;
+    width: 2em;
+    right: 28.79em;
     
-    height: 27em;
-    text-align: center;
-    margin: 1em;
-    background-repeat: no-repeat;
-    background-image: url('/images/photo-1521225099409-8e1efc95321d.jpg');
-    padding-top: 10em;
-    
-    
-    flex: 0 0 25%;
-
-}
-.site-footer .work3 {
-    
-    height: 27em;
-    text-align: center;
-    background-repeat: no-repeat;
-    margin: 1em;
-    background-image: url('/images/photo-main2.jpg');
-    padding-top: 10em;
- 
-    flex: 0 0 25%;
-
 }
 
-.work1 p{
-    color: blanchedalmond;
-    display: inline-block;
+.site-main .img img{
+    position: relative;
+    /* top: 9.5em; */
+    margin-top: -1.49em;
+    height: 100vh;
   
+    width: 1358px;
+   
+}
+
+
+.cardmenu {
+    width: 40em;
+    height: 40em;
+}
+
+
+.smile {
+    display: flex;
+    width: 3em;
+}
+
+.text-left {
+    display: flex;
+    /* float: left; */
+    /* width: 68em; */
+    position: relative;
+    right: 27em;
+    flex-direction: column;
+    margin-top: 1.5em;
+}
+
+.text-left h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 19em;
+    flex-wrap: wrap;
+}
+
+.text-left p {
+    font-size: 2.2em;
+    padding-bottom: 0;
+    line-height: 1;
+}
+
+.text-left p::first-letter{
+    font-size: 3.5em;
+}
+
+.right-img {
+    position: relative;
+    right: 22em;
+}
+.right-img img {
+    margin-top: 1.5em;
     position: relative;
     right: 3em;
 }

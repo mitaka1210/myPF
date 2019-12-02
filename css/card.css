@@ -1,0 +1,92 @@
+
+
+.card1 {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    position: relative;
+    right: 35em;
+}
+
+.card2 {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    position: relative;
+    top: -45em;
+}
+
+.card3 {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    position: relative;
+    top: -90em;
+    left: 31em;
+}
+.card1-image, .card2-image, .card3-image {
+    grid-area: image;
+    
+  }
+  .card1-text, .card2-text, .card3-text{
+    grid-area: text;
+  }
+  .card1-stats, .card2-stats, .card3-stats {
+    grid-area: stats; 
+}
+
+.card1-image, .card2-image, .card3-image {
+    grid-area: image;
+    background: url("/images/main_bann_theme-1.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
+
+  .card1-stats, .card2-stats, .card3-stats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(255, 7, 110);
+  }
+
+  .card1-stats .stat, .card2-stats .stat, .card3-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    padding:10px;
+  }
+
+  .card1:hover, .card2:hover, .card3:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .card1, .card2, .card3 {
+  
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:130px;
+  }

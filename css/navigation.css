@@ -1,25 +1,42 @@
-.nav {
+.site-header{
+    background-image: linear-gradient(to right bottom, #8bce9d, #3092ca, #007d9c, #00b4ab, #2be99f);
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+
+ .site-aside {
+    width: 68em;
+    position: relative;
+    right: 12em;
     
-    margin-top: 1.5em;
+    
 }
 
-.nav ul {
+.practice p  {
+    color: red;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 0;
+    position: relative;
+    right: 7em;
+}
+
+
+.text-center {
+    text-align: center; 
     display: flex;
+    flex-direction: column;
+    width: 65em;
+    position: relative;
+    right: 13em;
+    
 }
 
-.nav ul li {
-    display: block;
-    margin: 0 0.7em;
+.text-center h1 {
+    border-top-style: dotted;
 }
 
-.nav a {
-    display: block;
-    padding: .5em 1em;
-    background-color: #EEE;
-    color: #333;
-    text-decoration: none;
-}
-
-a:hover {
-    background-color: lawngreen;
+.text-center p {
+    border-block-end-style: dotted;
 }

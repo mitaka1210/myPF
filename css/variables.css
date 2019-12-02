@@ -1,9 +1,11 @@
 :root {
- --font-size: 20px;
+ --font-size: 14px;
  --font-line-height: 1.5;
  --font-family-main: 'Fira Sans', sans-serif;;
 
- --layouts-width: 55em;
+ --layouts-width: 40em;
  --layout-padding-b: 2em;
+
+ --layout-bgr-main: rgb(82, 241, 255);
 
 }
