@@ -6,8 +6,9 @@
 
 @import url('layout.css');
 @import url('navigation.css');
+@import url('page.css');
 @import url('burger.css');
 @import url('card.css');
 
 
-@import url('nav-media.css');
+@import url('footer.css');

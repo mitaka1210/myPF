@@ -9,7 +9,8 @@
     
     <title>{{ site.title }}</title>
 </head>
-<body>
+ <!--? Aко искаме да имаме по-голям селектор слагаме клас и на body и така в един друг файл css за специалните работи завсяка страница -->
+<body class="page-{{ page.title | slugify }}">
  
     <div class="site">
         
@@ -21,21 +22,22 @@
                     <h1>{{ site.title }}</h1>
                     
             </div>
-
-            <nav class="nav">
+            {% include navigation.html location="header" %}
+            <nav class="nav"
 
                 <!--TODO: Тук правим цикъл който да ни отваря страниците като кликнем на някоя в менюто и ги сортираме по номер ( order: )-->
-                <ul class="nav-links">
+                <!-- <ul class="nav-links">
                     {% assign mypages = site.pages | sort: "order" %}
                         {% for page in mypages %}
                         {% if page.title %}
-                        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+                        <li class="active"><a  href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
-                
-
-            </nav>
+                 -->
+                 
+ 
+            </nav> 
 
             <label for="nav-toggle" class="nav-toggle-label">
                 <span></span>
@@ -44,6 +46,9 @@
         </header>
 
         <main class="site-main">
+            <!-- TODO: Ако искаме да виждаме имената на страниците -->
+            <!-- <h1>{{ page.title }}</h1> -->
+           
             {{ content }}
         </main>
 
@@ -51,13 +56,11 @@
     </div>
 
     <footer class="site-footer">
-            {% include footer.html %}
+            <!-- {% include footer.html %} -->
 
 
-        <p>{{ site.title}} &copy; All right reserved</p>
+        <p> <a href="https://mitaka1210.github.io/My-Portfolio/">Engr. Dimitar Dimitrov</a> &copy; All right reserved</p>
     </footer>
-    
 
-    
 </body>
 </html>

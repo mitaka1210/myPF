@@ -114,8 +114,19 @@ nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
-
-nav a:hover {
+/*TODO: тук правим какъв да е цвета на бутона който сме избра ли  в нашия случай това са менютата */
+li.page-title-home.current-page{
+ 
+  background: blue;
+  
+}
+li.page-title-about.current-page{
+ 
+  background: red;
+  
+}
+.nav a:hover {
+  
   color: #000;
 }
 
