@@ -36,4 +36,3 @@ exclude:
   - package-lock.json
   - gulpfile.js
   - theme-personal
-  - .jekyll-cache

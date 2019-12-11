@@ -56,7 +56,7 @@
 .card1-image, .card2-image, .card3-image {
     grid-area: image;
     
-    background: url("/images/main_bann_theme-1.jpg");
+    background: url("/myPF/images/photo-main.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
