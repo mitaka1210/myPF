@@ -2,7 +2,7 @@ title: Д-р Вълчева
 email: dimitard185@gmail.com
 description: The website
 destination: docs
-# baseurl: "/myPF" # the subpath of your site, e.g. /blog
+baseurl: "/myPF" # the subpath of your site, e.g. /blog
 # baseurl: "" 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dimitar1210
