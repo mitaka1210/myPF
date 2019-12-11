@@ -1,7 +1,9 @@
 title: Д-р Вълчева
 email: dimitard185@gmail.com
 description: The website
-baseurl: "" # the subpath of your site, e.g. /blog
+destination: docs
+# baseurl: "/myPF" # the subpath of your site, e.g. /blog
+# baseurl: "" 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dimitar1210
 github_username:  mitaka1210
@@ -20,14 +22,18 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - docs
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package.json
+  - package-lock.json
+  - gulpfile.js
+  - theme-personal
+  - .jekyll-cache

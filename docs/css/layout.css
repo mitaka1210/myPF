@@ -1,0 +1,98 @@
+/*МОЖЕ ДА РАСТЕШ КОЛКОТО ИСКАШ НО*/
+
+/*КОГАТА СТАНЕШ 60em СПРИ ДА РАСТЕШ И СЕ ЦЕНТРИРАЙ*/
+
+/*234 - ПИКСЕЛИТЕ КОЙТО ИСКАМЕ ДА ПОСТИГНЕМ*/
+
+/*FONT-SIZE СМЕ ГО ЗАДАЛИ 16px РАЗДЕЛЯМЕ 234/16 И НАМИРАМЕ КОЛКО (em) СА НИ НУЖНИ СПРЯМО ИСКАНИТЕ ПИКСЕЛИ*/
+html {
+    background: var(--layout-bgr-main, white);
+
+  
+
+}
+.site {
+    max-width: var(--layouts-width, 50em);
+    margin: 0 auto;
+    display: flex;
+}
+
+.site-header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   opacity: .8;
+}
+
+.site-branding {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1em;
+}
+
+.first-img {
+    position: relative;
+    width: 2em;
+    right: 28.79em;
+    
+}
+
+.site-main .img img{
+    position: relative;
+    /* top: 9.5em; */
+    margin-top: -1.49em;
+    height: 100vh;
+  
+    width: 1364px;
+   
+}
+
+
+.cardmenu {
+    width: 40em;
+    height: 40em;
+}
+
+
+.smile {
+    display: flex;
+    width: 3em;
+}
+
+.text-left {
+    display: flex;
+    /* float: left; */
+    /* width: 68em; */
+    position: relative;
+    right: 27em;
+    flex-direction: column;
+    margin-top: 1.5em;
+}
+
+.text-left h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 19em;
+    flex-wrap: wrap;
+}
+
+.text-left p {
+    font-size: 2.2em;
+    padding-bottom: 0;
+    line-height: 1;
+}
+
+.text-left p::first-letter{
+    font-size: 3.5em;
+}
+
+.right-img {
+    position: relative;
+    right: 22em;
+}
+.right-img img {
+    margin-top: 1.5em;
+    position: relative;
+    right: 3em;
+}

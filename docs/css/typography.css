@@ -1,0 +1,53 @@
+/* ИМАМЕ ПРАВО САМО НА ШРИФТА В САЙТА*/
+
+
+/*ШРИФТА Е МЕЖДУ 14-16px ПО-СТАНДАРТ */
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500|McLaren&display=swap&subset=cyrillic,cyrillic-ext');
+
+
+html {
+    font-size: var(--font-size, 18px);
+    line-height: var(--font-line-height, 1.5);
+    font-family: var(--font-family-main, Arial, sans-serif) ;
+
+}
+
+
+
+body, table, form, input, textarea, option, select {
+    font: inherit;
+
+}
+
+p, ul, ol {
+    padding-bottom: var(--layout-padding-b, 1.5em);
+}
+
+ul, ol {
+    padding-left: 2.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'McLaren', cursive;
+    margin: 0;
+    padding-bottom: .5em;
+}
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.6em; }
+h5 { font-size: 1.4em; }
+h6 { font-size: 1.2em; }
+
+/*КОГАТА ПЪРВО Е ПАРАГРАФА ПОСЛЕ ЗАГЛАВИЕТО ИЗПОЛЗВСЕ ЗА МЕТА ДАТА НАД ЗАГЛАВИЕТО */
+
+p + h1, 
+p + h2,
+p + h3, 
+p + h4,
+p + h5, 
+p + h6 {
+    padding-top: .5em;
+}
