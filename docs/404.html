@@ -9,6 +9,7 @@
     <script src="/myPF/js/burger-app.js"></script>
     
     
+    
     <title>Д-р Вълчева</title>
 </head>
  <!--? Aко искаме да имаме по-голям селектор слагаме клас и на body и така в един друг файл css за специалните работи завсяка страница -->
@@ -108,7 +109,7 @@
             </label>
             
         </header>
-
+       
         <main class="site-main">
             <!-- TODO: Ако искаме да виждаме имената на страниците -->
             <!-- <h1></h1> -->
@@ -126,6 +127,24 @@
 </div>
  -->
 
+            <div class="form">
+    <form action="" method="post">
+        <div class="field">
+        <input type="text" id="name" name="name" placeholder="Who are you?"/>
+        <label for="name">Name</label>
+        </div>
+        <div class="field">
+        <input type="text" id="email" name="email" placeholder="name@domain.tld" />
+        <label for="email">E-Mail</label>
+        </div>
+        <div class="field">
+        <textarea id="msg" rows="4" name="msg" placeholder="You message..."></textarea>
+        <label for="msg">Message</label>
+        </div>
+        <input class="button" type="submit" value="Send" />
+    </form>
+      
+</div>
 
         <p> <a href="https://mitaka1210.github.io/My-Portfolio/">Engr. Dimitar Dimitrov</a> &copy; All right reserved</p>
     </footer>

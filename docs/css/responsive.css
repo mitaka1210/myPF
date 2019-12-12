@@ -1,0 +1,164 @@
+@media screen and (min-width: 800px){
+
+}
+@media screen and (max-width: 799px) {
+    body {
+        overflow-x: hidden;
+    }
+    .site-main .img img {
+   
+        width: 886px;
+    }
+    
+    .practice {
+        width: 38em;
+        display: flex;
+        font-size: .9em;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .practice p {
+        color: red;
+        font-size: 6em;
+        text-align: center;
+        padding-bottom: 0;
+        position: relative;
+        right: 0em;
+    }
+
+    .cardmenu {
+        display: flex;
+        flex-direction: column;
+        margin-left: -2em;
+        
+    }
+    .card1, .card2, .card3{
+        position: relative;
+        top: -5em;
+        right: 1em;
+        /* bottom: 26em; */
+        left: -2em;
+        margin-bottom: -5em;
+    }
+
+    .text-center {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 31em;
+        position: relative;
+        right: -2em;
+        top: 85em;
+    }
+
+    .text-center h1 {
+        font-size: 1.4em;
+        margin-right: 0em;
+    }
+
+    .smile {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        top: 85em;
+    }
+
+    
+
+    .text-left {
+        display: flex;
+        position: relative;
+        right: 13em;
+        flex-direction: column;
+        margin-top: 1.5em;
+    }
+
+    .text-left h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 20em;
+        font-size: 1.5em;
+        margin-left: 10em;
+        flex-wrap: wrap;
+    }
+
+    .text-left p {
+        font-size: 1.2em;
+        padding-bottom: 0;
+        line-height: 1;
+        margin-left: 12em;
+    }
+
+    .right-img {
+        position: relative;
+        right: 0em;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .right-img img {
+        
+        margin-top: 1.5em;
+        position: relative;
+        right: 5em;
+        width: 24em;
+        border: 1px solid #000;
+           
+        
+    }
+
+    .site-footer {
+        position: relative;
+        top: 115em;
+      
+
+    }
+
+ 
+    
+
+    .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 26em;
+    position: relative;
+    right: 8em;
+    top: 88em;
+    margin: auto;
+    }
+
+    .img-area {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 22em;
+        position: relative;
+        top: 30em;
+        right: -2em;
+    }
+    .form {
+        width: 99%;
+    }
+    form * {
+        font-size: 13px;
+        letter-spacing: 0.075em;
+        font-weight: 300;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .sp-circle-link {
+        background-color: teal;
+        color: red;
+        cursor: pointer;
+        display: none;
+    }
+}

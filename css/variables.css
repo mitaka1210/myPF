@@ -1,11 +1,13 @@
 :root {
  --font-size: 14px;
  --font-line-height: 1.5;
- --font-family-main: 'Fira Sans', sans-serif;;
+ --font-family-main: 'Fira Sans', sans-serif;
 
- --layouts-width: 41em;
+ --layouts-width: 44.29em;;
  --layout-padding-b: 2em;
 
- --layout-bgr-main: rgb(82, 241, 255);
+ --layout-main-bgr: #310404 url('/myPF/images/main-bgr.jpg');
+
+ /* --layout-bgr-main: rgb(82, 241, 255); */
 
 }

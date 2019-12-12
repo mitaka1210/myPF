@@ -14,4 +14,14 @@
 
 footer p {
     text-align: center;
+    margin-top: 3em;
+    color: red;
+    cursor: pointer;
+    display: none;
+}
+
+footer p a {
+    color: red;
+    cursor: pointer;
+    display: none;
 }
