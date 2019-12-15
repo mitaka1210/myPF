@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/fontawesome/css/all.css">
+    
     <!-- <link rel="stylesheet" href="{{ site.baseurl }}/docs/images/**/*"> -->
     <script src="{{ site.baseurl }}/js/burger-app.js"></script>
     
     
     
     <title>{{ site.title }}</title>
+
+    <script>
+        window.addEventListener('load', (event) => {
+            document.querySelector('body').classList.add('loaded');
+        });
+    </script>
 </head>
  <!--? Aко искаме да имаме по-голям селектор слагаме клас и на body и така в един друг файл css за специалните работи завсяка страница -->
 <body class="page-{{ page.title | slugify }}">
@@ -22,31 +30,22 @@
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
 
             <div class="site-branding">
-                    <h1>{{ site.title }}</h1>
+                <div class="site-branding">
+                    <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+                    <!-- <p>{{ site.description }}</p> -->
+                </div>
                     
             </div>
             {% include navigation.html location="header" %}
-            <nav class="nav"
-
-                <!--TODO: Тук правим цикъл който да ни отваря страниците като кликнем на някоя в менюто и ги сортираме по номер ( order: )-->
-                <!-- <ul class="nav-links">
-                    {% assign mypages = site.pages | sort: "order" %}
-                        {% for page in mypages %}
-                        {% if page.title %}
-                        <li class="active"><a  href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-                 -->
-                 
- 
-            </nav> 
+           
 
             <label for="nav-toggle" class="nav-toggle-label">
                 <span></span>
             </label>
             
         </header>
+
+       
        
         <main class="site-main">
             <!-- TODO: Ако искаме да виждаме имената на страниците -->
@@ -59,9 +58,10 @@
     </div>
 
     <footer class="site-footer">
-            <!-- {% include footer.html %} -->
+            
 
             {% include form.html %}
+            {% include footer.html %} 
         <p> <a href="https://mitaka1210.github.io/My-Portfolio/">Engr. Dimitar Dimitrov</a> &copy; All right reserved</p>
     </footer>
 
