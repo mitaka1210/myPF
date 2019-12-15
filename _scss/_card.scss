@@ -61,7 +61,7 @@
 .card1-image,  .card3-image {
   grid-area: image;
     
-  background: url("{{ site.baseurl }}/images/dental.jpg");
+  background: url("/myPF/images/dental.jpg");
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
@@ -69,7 +69,7 @@
   .card2-image {
   grid-area: image;
   
-  background: url("{{ site.baseurl }}/images/dental.jpg");
+  background: url("/myPF/images/dental.jpg");
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
