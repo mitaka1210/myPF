@@ -1,0 +1,47 @@
+/*МОЖЕ ДА РАСТЕШ КОЛКОТО ИСКАШ НО*/
+
+/*КОГАТА СТАНЕШ 60em СПРИ ДА РАСТЕШ И СЕ ЦЕНТРИРАЙ*/
+
+/*234 - ПИКСЕЛИТЕ КОЙТО ИСКАМЕ ДА ПОСТИГНЕМ*/
+
+/*FONT-SIZE СМЕ ГО ЗАДАЛИ 16px РАЗДЕЛЯМЕ 234/16 И НАМИРАМЕ КОЛКО (em) СА НИ НУЖНИ СПРЯМО ИСКАНИТЕ ПИКСЕЛИ*/
+html {
+    background: var(--layout-bgr-main, white);
+
+  
+
+}
+.site {
+    max-width: var(--layouts-width, 50em);
+    margin: 0 auto;
+    display: flex;
+    
+    
+
+}
+
+
+
+.site-header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   opacity: .8;
+}
+
+.site-branding {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1em;
+}
+
+
+.btnPDF {
+    position: relative;
+    background-color: green;
+    cursor: pointer;
+    font-size: 2em;
+    width: 10em;
+    border: 2px solid #000;
+    border-radius: 1em;
+}

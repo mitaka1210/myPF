@@ -1,0 +1,174 @@
+.page-about {
+    height: 520vh;
+}
+
+.implant-main  {
+    margin-top: 21em;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.implant-main p {
+    background-image: var(--layout-text-color, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    font-size: 1em;
+    width: 25em;
+    height: 20em;
+    
+    margin-right: 1em;
+}
+
+.implant-main h2 {
+    background-image: var(--layout-services-text-color, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container {
+    position: relative;
+    max-width:  1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .cardName {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px 0;
+}
+
+.contaoner, .cardName:nth-child(odd){
+
+    flex-direction: row;
+}
+.container .cardName:nth-child(even){
+
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.container .cardName .imgBx {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    z-index: 1;
+    left: 25px;
+}
+
+
+.container .cardName:nth-child(even) .imgBx{
+    left: -25px;
+}
+
+.container .cardName .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentBx {
+    position: relative;
+    right: 25px;
+    width: 500px;
+    height: 468px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px 20px 100px;
+
+} 
+
+
+.container .cardName:nth-child(even) .contentBx{
+    right: -25px;
+    padding: 20px 100px 20px 60px;
+}
+
+.contentBx::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    z-index: -1;
+}
+.contentBx h2 {
+    font-size: 22px;
+    color: #fff;
+}
+
+.contentBx p {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.contentBx a {
+    display: inline-block;
+    // margin-top: 15px;
+    color: #fff;
+    text-decoration:  none;
+    padding: 10px;
+    border: 1px solid #333;
+    margin-left: 12em;
+}
+
+
+@media ( max-width: 1000px) {
+
+    .implant-main p {
+        font-size: 1em;
+        height: 20em;
+    }
+    .container .cardName {
+        flex-direction: column;
+        max-width: 350px;
+        margin: 25px 25px;
+    
+    }
+
+    .container .cardName .imgBx {
+        width: 100%;
+        height: 250px;
+        left: 0;  
+
+    }
+    .container .cardName .contentBx {
+        width: 100%;
+        height: auto;
+        right: 0;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .container .cardName .contentBx:before {
+        top: 0;
+        bottom: 0;
+
+
+    }
+
+    .container .cardName:nth-child(even) .imgBx{
+        left: 0px;
+    }
+
+    .container .cardName:nth-child(even) .contentBx{
+        right: 0;
+        padding: 31px;
+    }
+
+}
