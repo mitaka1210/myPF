@@ -58,22 +58,22 @@
   grid-area: stats; 
 }
 
-.card1-image,  .card3-image {
+.card1-image,   .card2-image, .card3-image {
   grid-area: image;
     
-  background: url("/docs/images/dental.jpg");
+  background: url("/images/dental.jpg");
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
   }
-  .card2-image {
-  grid-area: image;
+  // .card2-image {
+  // grid-area: image;
   
-  background: url("/docs/images/dental.jpg");
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  background-size: cover;
-  }
+  // background: url("/images/dental.jpg");
+  // border-top-left-radius: 15px;
+  // border-top-right-radius: 15px;
+  // background-size: cover;
+  // }
 
   .card1-stats, .card2-stats, .card3-stats {
     grid-area: stats; 
