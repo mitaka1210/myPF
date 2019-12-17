@@ -38,7 +38,19 @@ html {
 
 .btnPDF {
     position: relative;
-    background-color: green;
+    background-color: gold;
+    cursor: pointer;
+    font-size: 2em;
+    width: 10em;
+    border: 2px solid #000;
+    border-radius: 1em;
+    padding-bottom: 2em;
+}
+
+.btnHTML {
+    position: relative;
+    margin-top: 1em;
+    background-color: greenyellow;
     cursor: pointer;
     font-size: 2em;
     width: 10em;
