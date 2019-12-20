@@ -6,7 +6,8 @@
 
 /*FONT-SIZE СМЕ ГО ЗАДАЛИ 16px РАЗДЕЛЯМЕ 234/16 И НАМИРАМЕ КОЛКО (em) СА НИ НУЖНИ СПРЯМО ИСКАНИТЕ ПИКСЕЛИ*/
 html {
-    background: var(--layout-bgr-main, white);
+    // background: var(--layout-bgr-main, white);
+    background: var("{{site.baseurl}}/images/main-bgr.jpg");
 
   
 
