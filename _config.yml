@@ -4,8 +4,8 @@ description: Hi there!
 destination: docs
 baseurl: "/myPF"
 url: ""
-twitter_username: kdankov
-github_username: kdankov
+twitter_username: mitaka1210
+github_username: mitaka1210
 
 # Build settings
 markdown: kramdown

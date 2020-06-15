@@ -2,6 +2,7 @@
 
 
 /*ШРИФТА Е МЕЖДУ 14-16px ПО-СТАНДАРТ */
+$baseurl:"{{ site.baseurl }}";
 
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500|McLaren&display=swap&subset=cyrillic,cyrillic-ext');
 
@@ -11,7 +12,7 @@ html {
     line-height: var(--font-line-height, 1.5);
     font-family: var(--font-family-main, Arial, sans-serif) ;
     /* width: 90em; */
-    background-image: url("/myPF/images/main-bgr.jpg")
+    //background-image: url("/myPF/images/main-bgr.jpg")
 
 }
 

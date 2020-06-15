@@ -113,13 +113,13 @@ h1.main, p.demos {
 // 	animation-delay: 14s;
 // }
 .sp-globe {
-	position: absolute;
+	position: relative;
 	width: 282px;
 	height: 273px;
 	left: 50%;
 	top: 50%;
 	margin: -137px 0 0 -141px;
-	/* background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left; */
+
 	-webkit-animation: fadeInBack 3.6s linear 14s backwards;
 	-moz-animation: fadeInBack 3.6s linear 14s backwards;
 	-ms-animation: fadeInBack 3.6s linear 14s backwards;
@@ -134,9 +134,9 @@ h1.main, p.demos {
 	transform: scale(5);
 }
 .sp-circle-link {
-	position: fixed;
+	position: relative;
     left: 50%;
-    top: 22em;
+    top: 7em;
 	bottom: 100px;
 	// cursor: pointer;
 	margin-left: -50px;

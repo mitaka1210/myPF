@@ -1,7 +1,7 @@
 "use strict";
 
 let gulp = require("gulp"),
-	autoprefixer = require("gulp-autoprefixer"),
+	//autoprefixer = require("gulp-autoprefixer"),
 	csso = require("gulp-csso"),
 	size = require("gulp-size"),
 	browserSync = require('browser-sync').create(),
@@ -12,7 +12,7 @@ gulp.task("sass", function() {
 	return gulp.src( '_scss/**/*.scss' )
 		.pipe( size() )
 		.pipe( sass().on('error', sass.logError) )
-		.pipe( autoprefixer() )
+		//.pipe( autoprefixer() )
 		.pipe( size() )
 		.pipe( csso() )
 		.pipe( size() )

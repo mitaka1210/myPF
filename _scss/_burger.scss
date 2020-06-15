@@ -50,6 +50,7 @@ header {
 .nav-toggle-label {
   position: absolute;
   top: 0;
+  cursor: pointer;
   left: 0;
   margin-left: 1em;
   height: 100%;
@@ -64,7 +65,7 @@ header {
   background: white;
   height: 2px;
   width: 2em;
-  border-radius: 2px;
+  //border-radius: 2px;
   position: relative;
 }
 
